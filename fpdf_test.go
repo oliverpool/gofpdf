@@ -2850,7 +2850,32 @@ func TestMultiCellUnsupportedChar(t *testing.T) {
 	pdf.MultiCell(0, 5, "😀", "", "", false)
 
 	fileStr := example.Filename("TestMultiCellUnsupportedChar")
-	pdf.OutputFileAndClose(fileStr)
+	err := pdf.OutputFileAndClose(fileStr)
+	if !strings.Contains(err.Error(), "😀") {
+		t.Fatalf("error does not contain the faulty char '😀': %v", err)
+	}
+}
+
+func TestCellUnsupportedChar(t *testing.T) {
+	pdf := gofpdf.New("P", "mm", "A4", "")
+	pdf.AddPage()
+	fontBytes, _ := ioutil.ReadFile(example.FontFile("DejaVuSansCondensed.ttf"))
+	pdf.AddUTF8FontFromBytes("dejavu", "", fontBytes)
+	pdf.SetFont("dejavu", "", 16)
+
+	defer func() {
+		if r := recover(); r != nil {
+			t.Errorf("unexpected panic: %v", r)
+		}
+	}()
+
+	pdf.Cell(0, 5, "😀")
+
+	fileStr := example.Filename("TestCellUnsupportedChar")
+	err := pdf.OutputFileAndClose(fileStr)
+	if !strings.Contains(err.Error(), "😀") {
+		t.Fatalf("error does not contain the faulty char '😀': %v", err)
+	}
 }
 
 // ExampleFpdf_SetTextRenderingMode demonstrates embedding files in PDFs,

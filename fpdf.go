@@ -4200,15 +4200,19 @@ func (f *Fpdf) generateCIDFontMap(font *fontDefType, LastRune int) {
 
 	// for each character
 	for cid := startCid; cid < cwLen; cid++ {
-		if font.Cw[cid] == 0x00 {
+		if cid > 255 && font.usedRunes[cid] == 0 {
 			continue
+		}
+		if cid >= len(font.Cw) {
+			f.err = fmt.Errorf("character outside the supported range: %s", string(cid))
+			return
 		}
 		width := font.Cw[cid]
+		if width == 0x00 {
+			continue
+		}
 		if width == 65535 {
 			width = 0
-		}
-		if numb, OK := font.usedRunes[cid]; cid > 255 && (!OK || numb == 0) {
-			continue
 		}
 
 		if cid == prevCid+1 {
