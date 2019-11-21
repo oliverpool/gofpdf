@@ -3,7 +3,7 @@
 [![No Maintenance
 Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![MIT
-licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE)
+licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/oliverpool/gofpdf/master/LICENSE)
 [![Report](https://goreportcard.com/badge/github.com/oliverpool/gofpdf)](https://goreportcard.com/report/github.com/oliverpool/gofpdf)
 [![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/oliverpool/gofpdf)
 

@@ -262,7 +262,6 @@ for file attachments and annotations.
 [badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [badge-no-maintain]: http://unmaintained.tech/badge.svg
 [badge-report]: https://goreportcard.com/badge/github.com/oliverpool/gofpdf
-[badge-status]: https://travis-ci.org/jung-kurt/gofpdf.svg?branch=master
 [coverage]: https://blog.golang.org/cover
 [dfont]: http://dejavu-fonts.org/
 [draw2d-site]: https://github.com/llgcode/draw2d
@@ -276,13 +275,12 @@ for file attachments and annotations.
 [issue109]: https://github.com/oliverpool/gofpdf/issues/109
 [jung]: https://github.com/jung-kurt/
 [last-commit]: https://github.com/oliverpool/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
-[license]: https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE
+[license]: https://raw.githubusercontent.com/oliverpool/gofpdf/master/LICENSE
 [lint]: https://github.com/golang/lint
 [logo]: https://github.com/oliverpool/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
 [noto]: https://github.com/jsntn/webfonts/blob/master/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
 [report]: https://goreportcard.com/report/github.com/oliverpool/gofpdf
-[status]: https://travis-ci.org/jung-kurt/gofpdf
 [test]: https://github.com/oliverpool/gofpdf/blob/master/fpdf_test.go
 [unmaintained]: http://unmaintained.tech/
 [vet]: https://golang.org/cmd/vet/
