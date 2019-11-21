@@ -4,10 +4,10 @@
 Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE)
-[![Report](https://goreportcard.com/badge/github.com/jung-kurt/gofpdf)](https://goreportcard.com/report/github.com/jung-kurt/gofpdf)
-[![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/jung-kurt/gofpdf)
+[![Report](https://goreportcard.com/badge/github.com/oliverpool/gofpdf)](https://goreportcard.com/report/github.com/oliverpool/gofpdf)
+[![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/oliverpool/gofpdf)
 
-![](https://github.com/jung-kurt/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true)
+![](https://github.com/oliverpool/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true)
 
 Package gofpdf implements a PDF document generator with high level
 support for text, drawing and images.
@@ -56,7 +56,7 @@ continue to function without modification for a longer time than would
 be the case with many other languages.
 
 Forks should be based on the [last viable
-commit](https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a).
+commit](https://github.com/oliverpool/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a).
 Tools such as
 [active-forks](https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf)
 can be used to select a fork that looks promising for your needs. If a
@@ -72,13 +72,13 @@ appreciated. Best wishes to all of you.
 To install the package on your system, run
 
 ``` shell
-go get github.com/jung-kurt/gofpdf
+go get github.com/oliverpool/gofpdf
 ```
 
 Later, to receive updates, run
 
 ``` shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+go get -u -v github.com/oliverpool/gofpdf/...
 ```
 
 ## Quick Start
@@ -94,7 +94,7 @@ err := pdf.OutputFileAndClose("hello.pdf")
 ```
 
 See the functions in the
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf\_test.go](https://github.com/oliverpool/gofpdf/blob/master/fpdf_test.go)
 file (shown as examples in this documentation) for more advanced PDF
 examples.
 
@@ -142,7 +142,7 @@ the tests complete.
 
 Please note that these examples run in the context of a test. In order
 run an example as a standalone application, you’ll need to examine
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf\_test.go](https://github.com/oliverpool/gofpdf/blob/master/fpdf_test.go)
 for some helper routines, for example `exampleFilename()` and
 `summary()`.
 
@@ -213,7 +213,7 @@ Here are guidelines for making submissions. Your change should
   - be properly documented
   - be formatted with `go fmt`
   - include an example in
-    [fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+    [fpdf\_test.go](https://github.com/oliverpool/gofpdf/blob/master/fpdf_test.go)
     if appropriate
   - conform to the standards of [golint](https://github.com/golang/lint)
     and [go vet](https://golang.org/cmd/vet/), that is, `golint .` and
